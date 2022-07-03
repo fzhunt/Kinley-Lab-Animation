@@ -29,6 +29,7 @@
     <ClCompile Include="src\tiny_obj_loader.cc">
       <Filter>tinyobjloader</Filter>
     </ClCompile>
+    <ClCompile Include="src\Row.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\phong.frag" />

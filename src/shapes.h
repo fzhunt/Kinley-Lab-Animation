@@ -63,46 +63,6 @@ protected:
   GLuint normals;
 };
 
-class Cone : public ShapesC {
-public:
-	Cone();
-	virtual void Render();
-private:
-	GLfloat rd, h;
-	GLuint n;
-	void Cone::Generate(glm::vec3 d, glm::vec3 a,
-		float h, float rd, int n);
-	void InitArrays();
-};
-
-//derived class from ShapesC
-class SphereC: public ShapesC
-{
-public:
-	SphereC();
-	SphereC(int stacks, int slices, GLfloat r);
-	virtual void Render();		
-
-private:
-	GLuint stacks, slices;
-	GLfloat r;
-	void SphereC::Generate(int stacks, int slices, GLfloat r);
-    void InitArrays();
-    void Generate();
-};
-
-//derived class from ShapesC
-class CubeC: public ShapesC
-{
-public:
-	CubeC();
-	virtual void Render();		
-private:
-  void InitArrays();
-  void Generate();
-};
-
-
 class ModelC : public ShapesC {
 public:
 	ModelC(string file);
